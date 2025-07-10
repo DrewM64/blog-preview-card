@@ -8,15 +8,6 @@
   src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 body {
   background-color: hsl(47, 88%, 63%);
   display: grid;
@@ -27,6 +18,7 @@ body {
   font-family: Figtree;
 }
 
+/* card styles */
 .card {
   background-color: white;
   place-self: center;
@@ -38,4 +30,64 @@ body {
 
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  row-gap: 10px;
+
+  color: hsl(0, 0%, 7%);
+  font-size: 0.8rem;
+}
+
+.article-img {
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.category {
+  background-color: hsl(47, 88%, 63%);
+  display: inline;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: fit-content;
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 0.9em;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 5px 0;
+}
+
+.card-body {
+  color: hsl(0, 0%, 42%);
+  margin-bottom: 5px;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.avatar {
+  width: 2.5em;
+}
+
+.author {
+  font-weight: bold;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
