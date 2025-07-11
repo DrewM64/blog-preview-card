@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  font-family: Figtree;
+  font-family: Figtree, "sans-serif";
 }
 
 /* card styles */
@@ -36,7 +36,7 @@ body {
   color: hsl(0, 0%, 7%);
   /* fluidly resize font size depending on screen size
   font-size: clamp([min], [preferred], [max]); */
-  font-size: clamp(0.8rem, 0.5rem + 1vmin, 1rem);
+  font-size: clamp(0.8rem, 0.5rem + 1vmin, 0.9rem);
 }
 
 .article-img {
