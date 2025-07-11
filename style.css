@@ -34,7 +34,9 @@ body {
   row-gap: 10px;
 
   color: hsl(0, 0%, 7%);
-  font-size: 0.8rem;
+  /* fluidly resize font size depending on screen size
+  font-size: clamp([min], [preferred], [max]); */
+  font-size: clamp(0.8rem, 0.5rem + 1vmin, 1rem);
 }
 
 .article-img {
@@ -52,13 +54,18 @@ body {
 }
 
 .text-sm {
-  font-size: 0.7rem;
+  font-size: 0.8em;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5em;
   padding: 5px 0;
+}
+
+.card-title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
 }
 
 .card-body {
